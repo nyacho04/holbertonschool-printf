@@ -6,6 +6,6 @@
 #include <unistd.h>
 
 int _putchar(char c);
-
+int _print_char(va_list arg);
 int _printf(const char *format, ...);
 #endif

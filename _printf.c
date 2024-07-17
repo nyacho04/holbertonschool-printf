@@ -29,11 +29,9 @@ int _printf(const char *format, ...)
 				case 's':
 				{
 				char *str = va_arg(ap, char *);
-				while (*str != '\0')
+				if (str == NULL)
 				{
-					_putchar(*str);
-					str++;
-					count++;
+					write(1, "(null)", 6);
 				}
 				break;
 				}
