@@ -20,6 +20,12 @@ int _printf(const char *format, ...)
 		}
 	else
 	{
+		if (*(ptr + 1) == '\0')
+		{
+			_putchar('%');
+			count++;
+			break;
+		}
 		switch (*++ptr)
 		{
 				case 'c':
