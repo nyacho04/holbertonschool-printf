@@ -23,33 +23,17 @@ int _printf(const char *format, ...)
 		switch (*++ptr)
 		{
 				case 'c':
-					{
-				char c = (char) va_arg(ap, int);
-				_putchar(c);
+				_putchar(va_arg(ap, int));
 				count++;
 				break;
-					}
 				case 's':
 				{
 				char *str = va_arg(ap, char *);
-				if (str == NULL)
-				{
-				const char *null_str = "(null)";	
 				while (*str != '\0')
 				{
 					_putchar(*str);
-					null_str++;
+					str++;
 					count++;
-				}
-				}
-				else
-				{
-					while (*str != '0')
-					{
-						_putchar(*str);
-						str++;
-						count++;
-					}
 				}
 				break;
 				}
@@ -64,7 +48,7 @@ int _printf(const char *format, ...)
 					count += 2;
 					break;
 		}
-}
+	}	
 }
 	va_end(ap);
 	return (count);
