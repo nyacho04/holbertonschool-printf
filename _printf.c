@@ -41,14 +41,9 @@ int _printf(const char *format, ...)
 				{
 				char *str = va_arg(ap, char *);
 				if (str == NULL)
-				{	
-					_putchar('(');
-                                        _putchar('n');
-                                        _putchar('u');
-                                        _putchar('l');
-                                        _putchar('l');
-                                        _putchar(')');
-                                        count += 6;	
+				{
+					write(1, "(null)", 6);
+					count += 6;
 				}
 				else
 				{
