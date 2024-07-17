@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 			count++;
 			break;
 		}
-		switch (*++ptr)
+		switch (*(++ptr))
 		{
 			
 				case 'c':
@@ -70,6 +70,8 @@ int _printf(const char *format, ...)
 					_putchar('%');
 					_putchar(*ptr);
 					count += 2;
+					break;
+				case '\0':
 					break;
 		}
 	}	
