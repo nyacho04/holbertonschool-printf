@@ -2,7 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+/**
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
+ */
 int _printf(const char *format, ...)
 {
 	va_list ap;
@@ -18,8 +22,8 @@ int _printf(const char *format, ...)
 		_putchar(*ptr);
 		count++;
 		}
-	else
-	{
+		else
+		{
 		if (*(ptr + 1) == '\0')
 		{
 			_putchar('%');
@@ -28,6 +32,7 @@ int _printf(const char *format, ...)
 		}
 		switch (*++ptr)
 		{
+			
 				case 'c':
 				_putchar(va_arg(ap, int));
 				count++;
