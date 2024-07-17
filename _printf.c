@@ -29,16 +29,26 @@ int _printf(const char *format, ...)
 				case 's':
 				{
 				char *str = va_arg(ap, char *);
-				while (*str != '\0')
-				{
-					_putchar(*str);
-					str++;
-					count++;
-				}
 				if (str == NULL)
 				{
-					write(1, "(null)", 6);
+					_putchar('(');
+					_putchar('n');
+					_putchar('u');
+					_putchar('l');
+					_putchar('l');
+					_putchar(')');
+					count += 6;
+					
 				}
+				else
+				{
+					 while (*str != '\0')
+                                {
+                                        _putchar(*str);
+                                        str++;
+                                        count++;
+				}
+                                }
 				break;
 				}
 
@@ -57,3 +67,4 @@ int _printf(const char *format, ...)
 	va_end(ap);
 	return (count);
 }
+
