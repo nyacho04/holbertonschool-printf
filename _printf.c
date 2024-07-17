@@ -34,22 +34,22 @@ int _printf(const char *format, ...)
 					_putchar(*str);
 					str++;
 					count++;
-	}
-				break;  
-}
+				}
+				break;
+				}
 
-			case '%':
-			_putchar('%');
-			count++;
-			break;
-			default:
-		_putchar('%');
-		_putchar(*ptr);
-		count += 2;
-		break;
-		}	
+				case '%':
+					_putchar('%');
+					count++;
+					break;
+				default:
+					_putchar('%');
+					_putchar(*ptr);
+					count += 2;
+					break;
+		}
 	}	
 }
 	va_end(ap);
-	return count;
+	return (count);
 }
