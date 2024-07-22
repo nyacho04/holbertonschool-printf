@@ -7,7 +7,7 @@
 - **Character printing**: Allows printing individual characters.
 - **String printing**: Allows printing strings. If a `NULL` pointer is passed, it prints "(null)".
 - **Percentage printing**: Supports printing the '%' character using `%%`.
-- **Format specifiers**: Supports format specifiers such as `%c`, `%s`, `%d`, `%i`, etc.
+- **Format specifiers**: Supports format specifiers such as `%c`, `%s`, etc.
 
 ## Files
 - **main.c**:  This file serves as the entry point for testing the custom _printf function. It compares the output and behavior of _printf with the standard printf function using various format specifiers, including characters, strings, integers, pointers, and the percent sign.
