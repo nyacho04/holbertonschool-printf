@@ -16,6 +16,13 @@
 
 - **_putchar.c**: This file contains the implementation of the _putchar function, which writes a single character to the standard output (stdout). It uses the write system call to print the character and returns 1 on success or -1 on error.
 
+## Flowchart
+
+Here is the Flowchart:
+
+![Flowchart](printf.drawio.png)
+
+
 # Usage of _printf
 - How my _printf function works to print a character
 ```c
