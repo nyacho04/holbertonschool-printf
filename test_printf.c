@@ -2,6 +2,18 @@
 #include "test_main.h"
 #include <unistd.h>
 
+void *_print(int c)
+{
+	write(1, &c, 1);
+}
+void *_printstr(char *s)
+{
+	write(1, s, 1);
+}
+void *_printpercent(int c)
+{
+	write(1, c, 1);
+}
 /*
  * _printf - Function that emulates the printf function using the write function
  * @format: Instead of number of args, it keeps the format of the arguments
@@ -10,10 +22,8 @@
 
 int _printf(const char *format, ...)
 {
-	va_list args;
 	int count;
-	char *s;
-	int c;
+	va_list args;
 
 	count = 0;
 	va_start(args, format);
@@ -21,23 +31,71 @@ int _printf(const char *format, ...)
 	while (*format)
 	{
 		if (format == NULL)
-		{	va_end(args);
+		{	
+			va_end(args);
 			break;
-		}
-		if (*format == 's')
-		{
-			s = va_arg(args, char *);
-			write(1, s, 1);
-			count++;
 		}
 		if (*format == 'c')
 		{
-			c = va_arg(args, int);
-			write(1, &c, 1);
+			_print(c);
 			count++;
+			return (count);
 		}
-		format++;
+		if (*format == 's')
+		{
+			_printstr(s);
+			count++;
+			return (count);
+		}
+		if (*format == '%')
+		{
+			_printpercent(s);
+			count++;
+			return (count);
+		}
+		format++;	
 	}
 	va_end(args);
 	return (count);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
