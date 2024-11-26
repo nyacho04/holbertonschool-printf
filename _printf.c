@@ -20,18 +20,18 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-		if (*format == 'c')
-		{
-			c = va_arg(args, int);
-			_printchar(c);
-			count++;
-		}
-		else if (*format == 's')
+			if (*format == 'c')
 			{
-			s = va_arg(args, char *);
+				c = va_arg(args, int);
+				_printchar(c);
+				count++;
+			}
+			else if (*format == 's')
+			{
+				s = va_arg(args, char *);
 
-			if (s == NULL)
-				s = "(null)";
+				if (s == NULL)
+					s = "(null)";
 
 			while (s[len])
 			{
@@ -40,26 +40,26 @@ int _printf(const char *format, ...)
 			}
 			count += len;
 			}
-		else if (*format == '%')
+			else if (*format == '%')
 			{
 				_printpercent();
 				count++;
 			}
 			else
 			{
-				_printpercent();
+				_printchar('%');
 				_printchar(*format);
 				count++;
 			}
-			}
-			else
-			{
+		}
+		else
+		{
 			_printchar(*format);
 			count++;
-			}
+
+		}
 		format++;
 	}
-
 	va_end(args);
 	return (count);
 }

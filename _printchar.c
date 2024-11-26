@@ -1,7 +1,7 @@
 #include "_main.h"
 #include <unistd.h>
 /**
-* _print - Imprime un carácter en la salida estándar.
+* _printchar - Imprime un carácter en la salida estándar.
 *
 * @c: Carácter a imprimir.
 *
