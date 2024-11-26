@@ -3,6 +3,7 @@
 #include <unistd.h>
 /**
  * _printf - Emulates the printf function using write.
+ * 
  * @format: The format string containing the text and specifiers.
  *
  * Return: The number of characters printed.
@@ -33,6 +34,7 @@ int _printf(const char *format, ...)
             else if (*format == 's')
             {
                 char *s = va_arg(args, char *);
+                
                 if (s == NULL)
                     s = "(null)";
                 _printstr(s);
