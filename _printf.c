@@ -24,12 +24,13 @@ int _printf(const char *format, ...)
         if (*format == '%')
         {
             format++;
-            if (*format == 'c')
-            {
+            switch (*format)
+            { 
+                case c:
+        
                 int c = va_arg(args, int);
 
-                _print(c);
-                count++;
+                break;
             }
             else if (*format == 's')
             {
