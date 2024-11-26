@@ -1,19 +1,6 @@
 #include <stdarg.h>
-#include "test_main.h"
+#include "main.h"
 #include <unistd.h>
-
-void *_print(int c)
-{
-	write(1, &c, 1);
-}
-void *_printstr(char *s)
-{
-	write(1, s, 1);
-}
-void *_printpercent(int c)
-{
-	write(1, c, 1);
-}
 /*
  * _printf - Function that emulates the printf function using the write function
  * @format: Instead of number of args, it keeps the format of the arguments
