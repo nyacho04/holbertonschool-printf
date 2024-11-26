@@ -8,7 +8,7 @@
 * Return: Nada (void).
 */
 
-void _print(int c)
+void _printchar(int c)
 {
 	write(1, &c, 1);
 }
