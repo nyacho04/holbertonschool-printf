@@ -3,9 +3,9 @@
 #include <unistd.h>
 #include "_main.h"
 /**
- * _printf - Function that recreates the function printf
- * @format: Type of data to print
- * Return: The count of characters impressed
+ * _printf - Function that recreates the function printf.
+ * @format: Type of data to print.
+ * Return: The count of characters impressed.
  */
 int _printf(const char *format, ...)
 {

@@ -3,8 +3,9 @@
 #include <unistd.h>
 #include "_main.h"
 /**
-* __printstr - Prints a single character to stdout
-* @s: Character to print
+* _printstr - Prints a single character to stdout.
+* @s: Character to print.
+* Return: it returns count.
 */
 int _printstr(char *s)
 {
@@ -15,7 +16,7 @@ int _printstr(char *s)
 
 	while (s[i])
 	{
-		write (1, &s[i], 1);
+	write(1, &s[i], 1);
 		i++;
 	}
 

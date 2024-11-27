@@ -3,7 +3,6 @@
 
 int _printf(const char *format, ...);
 void _printchar(int c);
-void _printpercent(void);
 int _printstr(char *s);
 
 #endif
