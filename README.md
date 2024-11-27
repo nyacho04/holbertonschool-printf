@@ -1,6 +1,6 @@
-# holbertonschool-printf
+# **HolbertonSchool Printf**
 
-*Project creatd by Ignacio Devita and Rodrigo Ferrer.*
+*Project created by Ignacio Devita and Rodrigo Ferrer.*
 
 • **What it is?** 
 
@@ -34,3 +34,5 @@ We don't implement `structures`, `functions pointers` because the complexity req
 `format`: the string of characters that specifies the output.
 
 `...`: variable arguments to be printed according to the placeholder.
+
+![Flowchart](https://github.com/user-attachments/assets/089525b8-9cb6-4de0-9d6d-4739282597d4)
