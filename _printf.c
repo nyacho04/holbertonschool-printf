@@ -27,7 +27,6 @@ int _printf(const char *format, ...)
 			format++;
 			if (*format == '\0')
 				return (-1);
-
 			switch (*format)
 			{
 			case 'c':
@@ -40,20 +39,19 @@ int _printf(const char *format, ...)
 					str = "(null)";
 				count += _printstr(str);
 				break;
-            case '%':
-                _printchar('%');
-                count++;
-                break;
+			case '%':
+				_printchar('%');
+				count++;
+				break;
 			}
 		}
-        else
-        {
-            _printchar(*format);
-            count++;
-        }
+		else
+		{
+			_printchar(*format);
+			count++;
+		}
 		format++;
 	}
-
 	va_end(args);
 	return (count);
 }
