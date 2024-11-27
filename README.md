@@ -9,19 +9,18 @@ This `_printf` function is a custom implementation of the standard `printf` func
 
 • **How it works?**
 
-Our _printf implementation can handle the following formats
 
-*(the function must return the number of characters printed)*
+```c
+int _printf(const char *format, ...);
+```
+Our _printf implementation can handle the following formats:
 
 - `%c`: prints a character
 - `%d`: prints an integer
 - `%s`: prints a character strings
 - `%%`: prints the character %
 
-```c
-int _printf(const char *format, ...);
-```
-```c     
+*(the function must return the number of characters printed)*
 
 `format`: the string of characters that specifies the output.
 
