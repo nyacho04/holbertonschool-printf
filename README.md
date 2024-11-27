@@ -2,12 +2,12 @@
 
 *Project creatd by Ignacio Devita and Rodrigo Ferrer.*
 
-• **What it is?**
+• **What it is?** 
 
 This `_printf` function is a simplified implementation of the standard `printf` function in C. this can be able to interpret and display text in the console based on the provided arguments.
 
 
-## **How it works?**
+##  **How it works?** ⋮ 📝
 
 ```c
 int _printf(const char *format, ...);
@@ -21,7 +21,7 @@ int _printf(const char *format, ...);
 • This project we use the function `write(2),` conditional `switch` in order to reduce the length of the code instead of using the `if else` function. 
 We don't implement `structures`, `functions pointers` because the complexity required was too much for the mandatory tasks xD.
 
-• **Our _printf implementation can handle the following formats:**
+##  **This _printf implementation can handle the following formats** ⋮ ⛓️‍💥
 
 - `%c`: prints a character
 - `%d`: prints an integer
