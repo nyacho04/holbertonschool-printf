@@ -1,23 +1,23 @@
-#include "_main.h"
+#include <stdarg.h>
+#include <stddef.h>
 #include <unistd.h>
+#include "_main.h"
 /**
-* _printstr - Imprime una cadena de caracteres en la salida estándar.
-*
-* @s: Puntero a la cadena a imprimir.
-*
-* Return: Nada (void).
+* __printstr - Prints a single character to stdout
+* @s: Character to print
 */
-
-void _printstr(char *s)
+int _printstr(char *s)
 {
 	int i = 0;
 
 	if (s == NULL)
-		return;
+		return (0);
 
-	for (i = 0; s[i] != '\0'; i++)
-
+	while (s[i])
 	{
-		write(1, &s[i], 1);
+		write (1, &s[i], 1);
+		i++;
 	}
+
+	return (i);
 }

@@ -1,14 +1,12 @@
-#include "_main.h"
+#include <stdarg.h>
+#include <stddef.h>
 #include <unistd.h>
+#include "_main.h"
 /**
-* _printchar - Imprime un carácter en la salida estándar.
-*
-* @c: Carácter a imprimir.
-*
-* Return: Nada (void).
-*/
-
+ * _printchar - Prints a single character to stdout
+ * @c: Character to print
+ */
 void _printchar(int c)
 {
-	write(1, &c, 1);
+    write(1, &c, 1);
 }
