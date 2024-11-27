@@ -4,11 +4,10 @@
 
 • **What it is?**
 
-This `_printf` function is a custom implementation of the standard `printf` function in C. this can be able to interpret and display text in the console based on the provided arguments.
+This `_printf` function is a simplified implementation of the standard `printf` function in C. this can be able to interpret and display text in the console based on the provided arguments.
 
 
-• **How it works?**
-
+## **How it works?**
 
 ```c
 int _printf(const char *format, ...);
