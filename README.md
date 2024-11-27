@@ -18,7 +18,7 @@ int _printf(const char *format, ...);
 
 · · We made a few functions to print characters, `strings`, `numbers`, `integers`, and the `percent`.
 
-• This project we use the function `write(2),` conditional `switch` in order to reduce the length of the code instead of using the `if else` function. 
+· · This project we use the function `write(2),` conditional `switch` in order to reduce the length of the code instead of using the `if else` function. 
 We don't implement `structures`, `functions pointers` because the complexity required was too much for the mandatory tasks xD.
 
 ##  **This _printf implementation can handle the following formats** ⋮ ⛓️‍💥
