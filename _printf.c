@@ -2,6 +2,13 @@
 #include "_main.h"
 #include <stddef.h>
 
+/**
+ * _printf - Function that recreates the function printf
+ * @format: Type of data to print
+ * Return: The count of characters impressed
+ */
+
+
 int _printf(const char *format, ...)
 {
 	int count = 0;
@@ -33,12 +40,12 @@ int _printf(const char *format, ...)
 				if (s == NULL)
 					s = "(null)";
 
-			while (s[len])
-			{
-			_printchar(s[len]);
-				len++;
-			}
-			count += len;
+				while (s[len])
+				{
+					_printchar(s[len]);
+					len++;
+				}
+				count += len;
 			}
 			else if (*format == '%')
 			{
