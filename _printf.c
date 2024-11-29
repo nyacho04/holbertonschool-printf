@@ -45,11 +45,6 @@ int _printf(const char *format, ...)
 					_printnumber(va_arg(args, int));
 					count++;
 					break;
-				default:
-					_printchar('%');
-					_printchar(*format);
-					count += 2;
-					break;
 			}
 		}
 		else
