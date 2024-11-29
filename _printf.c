@@ -40,12 +40,8 @@ int _printf(const char *format, ...)
 					count++;
 					break;
 				case 'd':
-					_printnumber(va_arg(args, int));
-					count++;
-					break;
 				case 'i':
-					_printnumber(va_arg(args, int));
-					count++;
+					count += _printnumber(va_arg(args, int));
 					break;
 			}
 		}
