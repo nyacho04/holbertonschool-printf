@@ -39,14 +39,6 @@ int _printf(const char *format, ...)
 					_printchar('%');
 					count++;
 					break;
-				case 'd':
-					_printnumber(va_arg(args, int));
-					count++;
-					break;
-				case 'i':
-					_printnumber(va_arg(args, int));
-					count++;
-					break;
 			}
 		}
 		else
