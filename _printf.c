@@ -16,13 +16,14 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	if (format == NULL)
 		return (-1);
+
 	while (*format)
 	{
 		if (*format == '%')
 		{
+			if (*format == '\0')
+			return (-1);
 			format++;
-		if (*format == '\0')
-		return (-1);
 			switch (*format)
 			{
 				case 'c':
@@ -37,6 +38,11 @@ int _printf(const char *format, ...)
 					break;
 				case '%':
 					_printchar('%');
+					count++;
+					break;
+				case 'd':
+				case 'i':
+					_printnumber(va_arg(args, int));
 					count++;
 					break;
 			}
