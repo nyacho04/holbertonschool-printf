@@ -16,20 +16,21 @@ void _printnumber(int n)
 if (n == 0)
 	{
 	write(1, "0", 1);
+return;
 	}
-	if (n < 0)
+if (n < 0)
 	{
-	write(1, "-1", 1);
+	write(1, "-", 1);
 	n = -n;
 	}
 while (n > 0)
 	{
-	buffer[i] = n % 10 + '0';
+	buffer[i] = (n % 10) + '0';
 		n = n / 10;
 		i++;
 	}
 	while (i >= 0)
 	{
-	write(1, &buffer[i--], 1);
+	write(1, &buffer[--i], 1);
 	}
 }
