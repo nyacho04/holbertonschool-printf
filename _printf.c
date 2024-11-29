@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <unistd.h>
-#include "_main.h"
+#include "main.h"
 /**
  * _printf - Function that recreates the function printf.
  * @format: Type of data to print.
