@@ -29,7 +29,7 @@ while (n > 0)
 		n = n / 10;
 		i++;
 	}
-	while (i >= 0)
+	while (i > 0)
 	{
 	write(1, &buffer[--i], 1);
 	}
