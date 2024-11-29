@@ -2,7 +2,7 @@
 #define TEST_MAIN_H
 
 int _printf(const char *format, ...);
-int _printchar(int c);
+void _printchar(int c);
 int _printstr(char *s);
 
 #endif

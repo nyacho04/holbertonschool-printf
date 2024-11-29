@@ -6,7 +6,7 @@
  * _printchar - Prints a single character to stdout
  * @c: Character to print
  */
-int _printchar(int c)
+void _printchar(int c)
 {
-return (write(1, &c, 1));
+(write(1, &c, 1));
 }
