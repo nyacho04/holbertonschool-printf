@@ -1,6 +1,6 @@
 # **HolbertonSchool Printf**
 
-*Project created by Ignacio Devita and Rodrigo Ferrer.*
+*Project created by [Ignacio Devita](https://github.com/nyacho04) and [Rodrigo Ferrer](https://github.com/Rodrigoferrer).*
 
 • **What it is?** 
 
@@ -20,6 +20,8 @@ int _printf(const char *format, ...);
 
 · · This project we use the function `write(2),` conditional `switch` in order to reduce the length of the code instead of using the `if else` function. 
 We don't implement `structures`, `functions pointers` because the complexity required was too much for the mandatory tasks xD.
+
+· · To print the negatives and the integers in order, we decided to implement `stack (recursion)`, in our `printnumber` function. It was a bit challenging, but at the end, it was much more effective than using `iteration`.
 
 ##  **This _printf implementation can handle the following formats** ⋮ ⛓️‍💥
 
